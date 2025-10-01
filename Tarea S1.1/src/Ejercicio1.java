@@ -13,8 +13,8 @@ public class Ejercicio1 {
         String nombre;
         int cantidad;
         double precio;
-        double ProductoTotal;
-        double StockTotal;
+        double Totalproducto;
+        double StockTotal=0;
 
         System.out.println("------------- REGISTRO DE INVENTARIO ---------------");
 
@@ -22,8 +22,23 @@ public class Ejercicio1 {
             System.out.println("Producto" + i +":");
 
             System.out.println("Ingrese el nombre del producto:");
-            nombre=inventario.next();
-        }
+            inventario.nextLine();//Limpiar el buffer
+            nombre=inventario.nextLine();
+
+            System.out.println("Ingrese  la cantidad del producto(stock): ");
+            cantidad=inventario.nextInt();
+
+            System.out.println("Ingrese el precio unitario: ");
+            precio=inventario.nextDouble();
+
+            Totalproducto=precio*cantidad;
+
+            System.out.println(" Total del producto "+nombre+" es:"+Totalproducto);
+            StockTotal+=Totalproducto;
+         }
+        System.out.println("------------------------------");
+        System.out.println("El total de stock es: "+StockTotal);
+        inventario.close(); //Cerrar el Scanner para evitar advertencias
 
     }
 }
