@@ -32,6 +32,20 @@ public class Ejercicio2 {
             System.out.println("Error. El campo no puede estar vacio");
             return;
         }
+        System.out.println("Ingrese su correo: ");
+        correo=clientes.nextLine();
+        if(correo.isEmpty()){
+            System.out.println("Error. El campo no puede estar vacio");
+            return;
+        }
 
+        //Ficha con los datos del cliente
+        System.out.println("======== FICHA DEL CLIENTE ========");
+        System.out.println("Cedula: "+cedula);
+        System.out.println("Nombre:"+nombre);
+        System.out.println("Telefono:"+telefono);
+        System.out.println("Correo:"+correo);
+
+        clientes.close(); //Cerrar el Scanner
     }
 }
