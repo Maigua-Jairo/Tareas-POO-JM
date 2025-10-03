@@ -41,4 +41,5 @@ public class Ejercicio1 {
         inventario.close(); //Cerrar el Scanner para evitar advertencias
 
     }
+    //Diego EPN
 }
