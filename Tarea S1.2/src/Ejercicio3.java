@@ -5,7 +5,7 @@ public class Ejercicio3 {
         Scanner sc = new Scanner(System.in);
         //variables
         int numero;
-        int resultado=0;
+        int resultado;
         //Resultados
         System.out.print("Ingrese el numero(del 1 al 10): ");//Pedir un numero al usuario
         numero=sc.nextInt();
