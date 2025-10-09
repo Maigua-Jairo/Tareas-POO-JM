@@ -21,5 +21,6 @@ public class Ejercicio4 {
         } else{
             System.out.println("No cumple con los requisitos");
         }
+        sc.close();
     }
 }
